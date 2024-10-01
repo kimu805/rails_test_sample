@@ -4,9 +4,3 @@ require_relative "config/environment"
 
 run Rails.application
 Rails.application.load_server
-
-require "rack"
-require_relative "app"
-
-use Rack::Runtime
-run App.new
